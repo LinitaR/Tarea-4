@@ -1,0 +1,128 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**/
+
+html {
+    font-size: 10px; 
+    font-family: sans-serif;
+}
+
+:root {
+    --color: black ;
+    --color2:white ;
+}
+
+body {
+
+    color: var(--color2);
+    background-image: url("../images/fondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2em;
+}
+
+.borde {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.banner{
+    height: 528px;
+    background: url("../images/banner.jpg") fixed center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background:var(--color);
+    opacity: 0.8;
+}
+
+.banner__info{
+    padding:0 3em;
+    position: absolute;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    color: var(--color2);
+    margin: auto;
+}
+
+.banner__h1{
+    line-height: 1.5;
+    font-size: 3.5em;
+}
+
+.banner__p{
+    line-height: 2;
+    font-size: 1.3em;
+    opacity: 0.9;
+    margin-top: 1em;
+}
+
+input[id]:focus {
+    background-color: rgb(134, 200, 173);
+}
+
+button {
+    background-color: rgb(134, 200, 173);
+    border: none;
+    color: white;
+    padding: 1em 2em;
+    text-decoration: none;
+    cursor: pointer;  
+}
+
